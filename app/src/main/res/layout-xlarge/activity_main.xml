@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tk.blanchettapps.button_counter_blanchett.MainActivity">
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/counterview"
+        android:textSize="36sp"
+        tools:background="@android:color/background_light"
+        android:clickable="false"
+        tools:layout_editor_absoluteX="188dp"
+        app:layout_constraintBottom_toTopOf="@+id/clearbutton"
+        android:layout_marginBottom="104dp" />
+
+    <Button
+        android:id="@+id/clearbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="80dp" />
+
+    <Button
+        android:text="+"
+        android:layout_width="88dp"
+        android:layout_height="60dp"
+        android:id="@+id/plusbutton"
+        android:typeface="monospace"
+        android:textSize="36sp"
+        android:fontFamily="monospace"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        tools:layout_editor_absoluteY="225dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/counterview"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:text="-"
+        android:layout_width="88dp"
+        android:layout_height="60dp"
+        android:id="@+id/minusbutton"
+        android:textSize="36sp"
+        android:typeface="monospace"
+        android:fontFamily="monospace"
+        android:layout_marginStart="24dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        tools:layout_editor_absoluteY="226dp"
+        app:layout_constraintRight_toLeftOf="@+id/counterview"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.58" />
+
+</android.support.constraint.ConstraintLayout>

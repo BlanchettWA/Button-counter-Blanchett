@@ -31,8 +31,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
                 System.out.println("Value originally: " + count.toString());
 
-                //getContext().getResources().getInteger(R.integer.maximum);
-
                 count += 1;
                 System.out.println("Value Should now be" + count);
                 viewfield.setText(count.toString());
@@ -43,8 +41,6 @@ public class MainActivity extends AppCompatActivity {
         decrement.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 System.out.println("Value originally: " + count);
-
-                //getContext().getResources().getInteger(R.integer.maximum);
 
                 count -= 1;
                 System.out.println("Value Should now be" + count);

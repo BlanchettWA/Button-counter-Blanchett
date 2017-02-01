@@ -123,7 +123,7 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/leapnumber"
-        android:hint="Enter number to leap by"
+        android:hint="Leap by... (Default 5)"
         android:isScrollContainer="false"
         android:singleLine="true"
         android:layout_marginTop="8dp"

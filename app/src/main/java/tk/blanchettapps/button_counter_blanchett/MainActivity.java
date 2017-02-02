@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -54,6 +55,10 @@ public class MainActivity extends AppCompatActivity {
         sbutton3 = (Button) findViewById(R.id.Store3);
         sbutton4 = (Button) findViewById(R.id.Store4);
 
+        sbutton1.setText(getText(R.string.store1) + store1.toString());
+        sbutton2.setText(getText(R.string.store2) + store2.toString());
+        sbutton3.setText(getText(R.string.store3) + store3.toString());
+        sbutton4.setText(getText(R.string.store4) + store4.toString());
 
         leapset.addTextChangedListener(new TextWatcher() {
             @Override
@@ -126,6 +131,85 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        sbutton1.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                store1 = count;
+                sbutton1.setText(getText(R.string.store1) + store1.toString());
+                Toast.makeText(getApplicationContext(), "Value stored in slot 1!", Toast.LENGTH_SHORT).show();
+                return false;
+            }
+        });
+
+        sbutton2.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                store2 = count;
+                sbutton2.setText(getText(R.string.store2) + store2.toString());
+                Toast.makeText(getApplicationContext(), "Value stored in slot 2!", Toast.LENGTH_SHORT).show();
+                return false;
+            }
+        });
+
+        sbutton3.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                store3 = count;
+                sbutton3.setText(getText(R.string.store3) + store3.toString());
+                Toast.makeText(getApplicationContext(), "Value stored in slot 3!", Toast.LENGTH_SHORT).show();
+                return false;
+            }
+        });
+
+        sbutton4.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                store4 = count;
+                sbutton4.setText(getText(R.string.store4) + store4.toString());
+                Toast.makeText(getApplicationContext(), "Value stored in slot 4!", Toast.LENGTH_SHORT).show();
+                return false;
+            }
+        });
+
+        sbutton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                count = store1;
+                viewfield.setText(count.toString());
+                Toast.makeText(getApplicationContext(), "Value restored from slot 1!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        sbutton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                count = store2;
+                viewfield.setText(count.toString());
+                Toast.makeText(getApplicationContext(), "Value restored from slot 2!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        sbutton3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                count = store3;
+                viewfield.setText(count.toString());
+                Toast.makeText(getApplicationContext(), "Value restored from slot 3!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        sbutton4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                count = store4;
+                viewfield.setText(count.toString());
+                Toast.makeText(getApplicationContext(), "Value restored from slot 4!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
     }
 
     @Override
@@ -133,6 +217,11 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         outState.putInt("countvalue",count);
         outState.putInt("leapy", leapnum);
+        outState.putInt("s1", store1);
+        outState.putInt("s2", store2);
+        outState.putInt("s3", store3);
+        outState.putInt("s4", store4);
+
     }
 
     @Override
@@ -149,6 +238,18 @@ public class MainActivity extends AppCompatActivity {
             leapnum = tempnum;
             leapset.setText(leapnum.toString());
         }
+
+        store1 = savedInstanceState.getInt("s1");
+        store2 = savedInstanceState.getInt("s2");
+        store3 = savedInstanceState.getInt("s3");
+        store4 = savedInstanceState.getInt("s4");
+        sbutton1.setText(getText(R.string.store1) + store1.toString());
+        sbutton2.setText(getText(R.string.store2) + store2.toString());
+        sbutton3.setText(getText(R.string.store3) + store3.toString());
+        sbutton4.setText(getText(R.string.store4) + store4.toString());
+
+
+
 
     }
 }

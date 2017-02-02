@@ -17,8 +17,17 @@
         tools:background="@android:color/background_light"
         android:clickable="false"
         android:textColor="@android:color/black"
-        tools:layout_editor_absoluteY="75dp"
-        tools:layout_editor_absoluteX="286dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="136dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/clearbutton"
@@ -26,8 +35,17 @@
         android:layout_height="wrap_content"
         android:text="Clear"
         android:textSize="18sp"
-        tools:layout_editor_absoluteY="187dp"
-        tools:layout_editor_absoluteX="252dp" />
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintVertical_bias="0.75" />
 
     <Button
         android:text="+"
@@ -37,8 +55,17 @@
         android:typeface="monospace"
         android:textSize="36sp"
         android:fontFamily="monospace"
-        tools:layout_editor_absoluteY="126dp"
-        tools:layout_editor_absoluteX="439dp" />
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:text="-"
@@ -48,24 +75,53 @@
         android:textSize="36sp"
         android:typeface="monospace"
         android:fontFamily="monospace"
-        tools:layout_editor_absoluteY="126dp"
-        tools:layout_editor_absoluteX="66dp" />
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintHorizontal_bias="0.1" />
 
     <Button
         android:text="Leap -"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/jumpback"
-        tools:layout_editor_absoluteY="220dp"
-        tools:layout_editor_absoluteX="64dp" />
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintVertical_bias="0.8"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintHorizontal_bias="0.1" />
 
     <Button
         android:text="Leap +"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/jumpforward"
-        tools:layout_editor_absoluteY="220dp"
-        tools:layout_editor_absoluteX="440dp" />
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -74,8 +130,17 @@
         android:ems="10"
         android:id="@+id/leapnumber"
         android:hint="Leap by... (Default 5)"
-        tools:layout_editor_absoluteY="247dp"
-        tools:layout_editor_absoluteX="189dp" />
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
     <Button
@@ -90,7 +155,11 @@
         app:layout_constraintVertical_bias="0.0"
         android:layout_marginStart="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp" />
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <Button
         android:text="@string/store2"
@@ -140,5 +209,9 @@
         app:layout_constraintVertical_bias="0.0"
         android:layout_marginEnd="16dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="16dp" />
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintHorizontal_bias="1.0" />
 </android.support.constraint.ConstraintLayout>

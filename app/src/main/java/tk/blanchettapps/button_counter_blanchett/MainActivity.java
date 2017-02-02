@@ -24,6 +24,17 @@ public class MainActivity extends AppCompatActivity {
     private Button leapup;
     private Button leapdown;
 
+    private Integer store1 = 0;
+    private Integer store2 = 0;
+    private Integer store3 = 0;
+    private Integer store4 = 0;
+
+    private Button sbutton1;
+    private Button sbutton2;
+    private Button sbutton3;
+    private Button sbutton4;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,11 +44,16 @@ public class MainActivity extends AppCompatActivity {
         decrement = (Button) findViewById(R.id.minusbutton);
         clear = (Button) findViewById(R.id.clearbutton);
         viewfield = (TextView) findViewById(R.id.counterview);
+
         leapset = (EditText) findViewById(R.id.leapnumber);
-
-
         leapup = (Button) findViewById(R.id.jumpforward);
         leapdown = (Button) findViewById(R.id.jumpback);
+
+        sbutton1 = (Button) findViewById(R.id.Store1);
+        sbutton2 = (Button) findViewById(R.id.Store2);
+        sbutton3 = (Button) findViewById(R.id.Store3);
+        sbutton4 = (Button) findViewById(R.id.Store4);
+
 
         leapset.addTextChangedListener(new TextWatcher() {
             @Override

@@ -137,4 +137,50 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="16dp" />
 
+    <Button
+        android:text="@string/store1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Store1"
+        app:layout_constraintRight_toLeftOf="@+id/Store3"
+        android:layout_marginEnd="112dp"
+        android:layout_marginRight="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="456dp" />
+
+    <Button
+        android:text="@string/store2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Store2"
+        app:layout_constraintRight_toLeftOf="@+id/Store3"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/Store1"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="456dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:text="@string/store3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="199dp"
+        android:id="@+id/Store3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="456dp" />
+
+    <Button
+        android:text="@string/store4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Store4"
+        app:layout_constraintLeft_toRightOf="@+id/Store3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="456dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp" />
+
 </android.support.constraint.ConstraintLayout>

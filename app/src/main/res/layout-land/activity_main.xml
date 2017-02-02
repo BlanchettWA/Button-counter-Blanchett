@@ -17,17 +17,8 @@
         tools:background="@android:color/background_light"
         android:clickable="false"
         android:textColor="@android:color/black"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
+        tools:layout_editor_absoluteY="75dp"
+        tools:layout_editor_absoluteX="286dp" />
 
     <Button
         android:id="@+id/clearbutton"
@@ -35,16 +26,8 @@
         android:layout_height="wrap_content"
         android:text="Clear"
         android:textSize="18sp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/counterview" />
+        tools:layout_editor_absoluteY="187dp"
+        tools:layout_editor_absoluteX="252dp" />
 
     <Button
         android:text="+"
@@ -54,18 +37,8 @@
         android:typeface="monospace"
         android:textSize="36sp"
         android:fontFamily="monospace"
-        tools:layout_constraintRight_creator="1"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="24dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintLeft_toRightOf="@+id/counterview"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="126dp"
+        tools:layout_editor_absoluteX="439dp" />
 
     <Button
         android:text="-"
@@ -75,52 +48,24 @@
         android:textSize="36sp"
         android:typeface="monospace"
         android:fontFamily="monospace"
-        android:layout_marginStart="24dp"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="24dp"
-        app:layout_constraintRight_toLeftOf="@+id/counterview"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintHorizontal_bias="0.25"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp" />
+        tools:layout_editor_absoluteY="126dp"
+        tools:layout_editor_absoluteX="66dp" />
 
     <Button
         android:text="Leap -"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/jumpback"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/minusbutton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"
-        android:layout_marginStart="64dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="64dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="16dp"
-        app:layout_constraintHorizontal_bias="0.0" />
+        tools:layout_editor_absoluteY="220dp"
+        tools:layout_editor_absoluteX="64dp" />
 
     <Button
         android:text="Leap +"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/jumpforward"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/plusbutton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="64dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="64dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp"
-        app:layout_constraintHorizontal_bias="1.0" />
+        tools:layout_editor_absoluteY="220dp"
+        tools:layout_editor_absoluteX="440dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -128,16 +73,72 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/leapnumber"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp"
+        android:hint="Leap by... (Default 5)"
+        tools:layout_editor_absoluteY="247dp"
+        tools:layout_editor_absoluteX="189dp" />
+
+
+    <Button
+        android:text="@string/store1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Store1"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="16dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/clearbutton"
-        android:hint="Leap by... (Default 5)" />
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
 
+    <Button
+        android:text="@string/store2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Store2"
+        android:layout_marginStart="40dp"
+        app:layout_constraintLeft_toRightOf="@+id/Store1"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintRight_toLeftOf="@+id/Store4"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:text="@string/store3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Store3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintRight_toLeftOf="@+id/Store4"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/Store1"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.9" />
+
+    <Button
+        android:text="@string/store4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Store4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp" />
 </android.support.constraint.ConstraintLayout>

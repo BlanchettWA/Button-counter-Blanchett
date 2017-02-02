@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/counterview"
         android:textSize="36sp"
-        tools:background="@android:color/background_light"
         android:clickable="false"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
